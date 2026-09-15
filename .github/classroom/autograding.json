@@ -1,0 +1,81 @@
+{
+  "tests": [
+    {
+      "name": "Constructors",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [constructors]",
+      "timeout": 5,
+      "points": 5
+    },
+    {
+      "name": "Hash Function",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [hash]",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "Insert Values",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [insert]",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "Contains Values",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [contains]",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Remove Values",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [remove]",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "Rehashing",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [rehash]",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "Clear the Set",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [clear]",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Copy (Rule of Three)",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [copy]",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "Print Set to Stream",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [ostream]",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Const Correctness",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [const]",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Performance",
+      "setup": "mkdir -p build && cd build; cmake ..; make -j4",
+      "run": "cd build; ./int_hash_set_test [performance]",
+      "timeout": 1,
+      "points": 5
+    }
+  ]
+}
